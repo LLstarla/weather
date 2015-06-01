@@ -1,0 +1,6 @@
+/* Home Screen */
+[data-role="content"] h1 {
+  font-size: 6em;
+  color: teal;
+}
+
