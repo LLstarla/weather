@@ -3,70 +3,63 @@
   <head>
     <meta charset="UTF-8">
 
-
-    <title>Weather App - jQuery Mobile Version</title>
-    
+    <title>Weather App</title>
     
     <link rel="stylesheet" href="css/normalize.css">
-
     <link rel='stylesheet prefetch' href='http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css'>
-
-        <link rel="stylesheet" href="css/style.css">
-
-    
-    
-    
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
 
-    <!-- Home Screen -->
-<div data-role="page" id="home" class="">
-  
-  <div data-role="header">
-       <h1>Weather</h1>
-  </div>
-   
-  <div data-role="content">
-      
-    <img src="http://placehold.it/300x200" alt="" class="weather-image" />
-    <h1 class="temp">00 F</h1>
-    <h6 class="city">Cheney, WA</h6>
+<!-- Home Screen -->
+  <div data-role="page" id="home" class="">
     
-    <a href="#spokane"
-       data-role="button"
-       data-theme="b"
-       data-transition="slide">Spokane</a>
-    <a href="" 
-       data-role="button"
-       data-theme="b">Cheney</a>
+    <div data-role="header">
+         <h1>Weather</h1>
+    </div>
+     
+    <div data-role="content">
+        
+      <img src="http://placehold.it/300x200" alt="" class="weather-image" />
+      <h1 class="temp">00 F</h1>
+      <h6 class="city">Cheney, WA</h6>
+      
+      <a href="#spokane"
+         data-role="button"
+         data-theme="b"
+         data-transition="slide">Spokane</a>
+      <a href="" 
+         data-role="button"
+         data-theme="b">Cheney</a>
+    </div>
+    
+    <div data-role="footer">
+         <h6>2015</h6>
+    </div>
+     
   </div>
-  
-  <div data-role="footer">
-       <h6>2015</h6>
-  </div>
-   
-</div>
 
 <!-- Spokane Screen -->
-<div data-role="page" id="spokane">
-  
-  <div data-role="header">
-    <a href="#home">Home</a>
-  </div>
-  
-  <div data-role="content">
-    <h1>Spokane</h1>
-    <p>60 degrees & Sunny</p>
+  <div data-role="page" id="spokane">
+    
+    <div data-role="header">
+      <a href="#home">Home</a>
+    </div>
+    
+    <div data-role="content">
+      <h1>Spokane</h1>
+      <p>60 degrees &amp; Sunny</p>
+    </div>
+
   </div>
 
-  
-</div>
+
+<!-- Scripts -->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js'></script>
-<script src='js/esmhp.js'></script>
-
-        <script src="js/index.js"></script>
+    <script src='http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js'></script>
+    <script src='js/esmhp.js'></script>
+    <script src="js/index.js"></script>
 
     
     
