@@ -23,21 +23,41 @@
         
       <img src="http://placehold.it/300x200" alt="" class="weather-image" />
       <h1 class="temp">00 F</h1>
-      <h6 class="city">Cheney, WA</h6>
+      <h6 class="city">Anywhere, US</h6>
       
-      <a href="#spokane"
+      <a href="#cheney"
+         data-role="button"
+         data-theme="b"
+         data-transition="slide">Cheney</a>
+      <a href="#spokane" 
          data-role="button"
          data-theme="b"
          data-transition="slide">Spokane</a>
-      <a href="" 
+      <a href="#seattle" 
          data-role="button"
-         data-theme="b">Cheney</a>
+         data-theme="b"
+         data-transition="slide">Seattle</a>
+
     </div>
     
     <div data-role="footer">
          <h6>2015</h6>
     </div>
      
+  </div>
+
+<!-- Cheney Screen -->
+  <div data-role="page" id="cheney">
+    
+    <div data-role="header">
+      <a href="#home">Home</a>
+    </div>
+    
+    <div data-role="content">
+      <h1>Cheney</h1>
+      <p>75 degrees &amp; Sunny</p>
+    </div>
+
   </div>
 
 <!-- Spokane Screen -->
@@ -49,10 +69,24 @@
     
     <div data-role="content">
       <h1>Spokane</h1>
-      <p>60 degrees &amp; Sunny</p>
+      <p>60 degrees &amp; Overcast</p>
     </div>
 
   </div>
+
+<!-- Seattle Screen -->
+  <div data-role="page" id="seattle">
+    
+    <div data-role="header">
+      <a href="#home">Home</a>
+    </div>
+    
+    <div data-role="content">
+      <h1>Seattle</h1>
+      <p>50 degrees &amp; Cloudy</p>
+    </div>
+
+  </div>  
 
 
 <!-- Scripts -->
