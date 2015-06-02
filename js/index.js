@@ -1,13 +1,18 @@
-// Get The Weather
-$.simpleWeather({
-  
-  location: '99004', 
-  
-  unit: 'f', 
-  
-  success: function( weather ) {
+$(document).ready(function(){
     
-    // Get Condition Code
+    // Click Button
+    $('button').click(function(){
+    
+        // Store Input
+        var zip = $('input').val();
+        console.log(zip);
+
+        // GET WEATHER
+        $.simpleWeather({
+            zipcode: zip,
+            success: function(weather){
+
+    Get Condition Code
     var currentCode = weather.code;
     console.log(currentCode);
     
@@ -33,4 +38,17 @@ $.simpleWeather({
       console.log(error);
   }
   
-});
+});// end weather
+        
+});//end click
+    
+    // Clear Input on Click
+    $('input:text').click(function(){
+        $('input').val('');
+    });// end clear input    
+    
+});// end document
+
+
+
+
