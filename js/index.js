@@ -1,3 +1,36 @@
+$(document).ready(function(){
+    
+    // Click Button
+    $('button').click(function(){
+    
+        // Store Input
+        var zip = $('input').val();
+        console.log(zip);
+
+        // GET WEATHER
+        $.simpleWeather({
+            zipcode: zip,
+            success: function(weather){
+                
+    $('.custtemp').text( weather.temp + weather.units.temp );
+    $('.custcity').text( weather.city + ' , ' + weather.region );
+    $('.custimage').attr('src', weather.image);
+    }, 
+           
+        });// end weather
+        
+    });//end click
+    
+    // Clear Input on Click
+    $('input:text').click(function(){
+        $('input').val('');
+    });// end clear input    
+    
+});// end document
+
+
+
+
 // Get The Weather ---------- HOME
 $.simpleWeather({
   location: '77586', 
