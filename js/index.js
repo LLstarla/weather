@@ -1,28 +1,3 @@
-// Click Button
-    $('button').click(function(){
-    
-        // Store Input
-        var zip = $('input').val();
-        console.log(zip);
-
-        // Get The Weather ---------- CUSTOM
-        $.simpleWeather({
-            zipcode: zip,
-            success: function(weather){
-                
-    $('[data-role="content"] .temp').text( weather.temp + weather.units.temp );
-    $('[data-role="content"] .city').text( weather.city + ' , ' + weather.region );
-    $('.weather-image').attr('src', weather.image);
-    }, 
-           
-        });// end weather
-        
-    });//end click
-    
-    // Clear Input on Click
-    $('input:text').click(function(){
-        $('input').val('');
-    });// end clear input    
 
 
 // Get The Weather ------- CHENEY
@@ -79,9 +54,34 @@ $.simpleWeather({
   
 });
 
+// Get The Weather ------- CUSTOM
+   // Click Button
+    $('button').click(function(){
+    
+        // Store Input
+        var zip = $('input').val();
+        console.log(zip);
 
+        // Get The Weather ---------- CUSTOM
+$.simpleWeather({
+    zipcode: zip;
+    success: function(weather){
+                
+    $('[data-role="content"] .temp0').text( weather.temp + weather.units.temp );
+    $('[data-role="content"] .city0').text( weather.city + ' , ' + weather.region );
+    $('.weather-image0').attr('src', weather.image);
+    }, 
+           
+        });// end weather
+        
+    });//end click
+    
+    // Clear Input on Click
+    $('input:text').click(function(){
+        $('input').val('');
+    });// end clear input    
 
-
+});
 
 
 
