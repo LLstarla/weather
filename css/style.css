@@ -1,8 +1,20 @@
 #home {
-	background: #0f9e92;
+	background: #baaabf;
+}
+#cheney, #spokane, #seattle, #custom {
+	background: lightblue;
 }
 
-[data-role='header'] {
-	background: red;
-	color: blue;
+#toppy, #bottomy {
+	background: #3b0649;
+	color: #baaabf;
+	text-decoration: none;
+	text-shadow: none;
+	border: none;
+
+}
+
+[data-role="content"] {
+	text-align: center;
+	font-size: 1.5rem;
 }
