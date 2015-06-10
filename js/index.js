@@ -54,4 +54,35 @@ $.simpleWeather({
   
 });
 
+// Get The Weather ------- CUSTOM
+$(document).ready(function(){
+    
+    // Click Button
+    $('button').click(function(){
+    
+        // Store Input
+        var zip = $('input').val();
+        console.log(zip);
+
+        // GET WEATHER
+        $.simpleWeather({
+            zipcode: zip,
+            success: function(weather){
+                
+    $('[data-role="content"] h1').text( weather.temp + weather.units.temp );
+    $('[data-role="content"] h2').text( weather.city + ' , ' + weather.region );
+    $('.image').attr('src', weather.image);
+    }, 
+           
+        });// end weather
+        
+    });//end click
+    
+    // Clear Input on Click
+    $('input:text').click(function(){
+        $('input').val('');
+    });// end clear input    
+    
+});// end document
+
 
